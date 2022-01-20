@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Done",
+        "description": "Done is a simple app that allows you to track habits and daily tasks, while also motivating yourself by keeping a streak. I build Done, as I was unable to find a simple and clean app that allowed me to keep a streak on android.",
+        "image":"/static/images/done.png",
+        "tags":["React Native", "JavaScript"],
+        "links":{
+            "source":"https://github.com/olivertemple/done"
+        }
+    },
+    {
+        "name":"Spotistats",
+        "description":"Spotistats is a simple and sleek application that uses the spotify API to analyse your spotify music library. It allows you to see your top artists, top tracks, and top genres, as well as your entire library.",
+        "image":"/static/images/spotistats.png",
+        "tags":["React Native", "JavaScript"],
+        "links":{
+            "source":"https://github.com/olivertemple/spotistats"
+        }
+    },
+    {
+        "name":"Weather",
+        "description":"Weather is a progressive web app that uses the openweathermap api to fetch the weather at your location. It shows the weather for the next two days at 1 hour intervals, and also gives an overview of the weather for the coming week.",
+        "image":"/static/images/weather.png",
+        "tags":["React", "JavaScript", "Progressive Web App"],
+        "links":{
+            "source":"https://github.com/olivertemple/spotistats",
+            "deployment":"https://olivertemple.github.io/weather/"
+        }
+    },
+    {
+        "name":"Init",
+        "description":"Init is a simple command line utility that allows you to easily create a new git repository and link it to a new GitHub repository. It also allows you to create a repository from a predefined template, as well as create extra files.",
+        "image":"/static/images/init.png",
+        "tags":["Python"],
+        "links":{
+            "source":"https://github.com/olivertemple/init"
+        }
+    },
+    {
+        "name":"Paths",
+        "description":"Paths is a website that uses an API hosted by AWS to generate and solve mazes with a variety of algorithms. It allows for perimeters like size to be set, as well as showing how the path finding algorithm works through a visual representation.",
+        "image":"/static/images/paths.png",
+        "tags":["React", "JavaScript", "API", "AWS"],
+        "links":{
+            "source":"https://github.com/olivertemple/nea",
+            "deployment":"https://olivertemple.github.io/nea/"
+        }
+    }
+]

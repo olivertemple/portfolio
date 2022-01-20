@@ -1,7 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .hero-body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
+}
+
+.hero{
+    height:calc(100vh - 61px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.title, .intro{
+    margin:0px;
+}
+
+body{
+    margin:0px;
+    background-color: #1f2026;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.Typewriter{
+    color:#4b63d8;
+    font-size: 3rem;
+}
+.menuBar{
+    position:sticky;
+    top:0px;
+    left:0px;
+    z-index:1;
+    width:"100%";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    background-color: #1f2026;
+}
+.menuItem{
+    margin:20px;
+    cursor: pointer;
+    color: #4b63d8;
+}
+
+.menuItem:hover{
+    color: #ff6b35;
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.about, .projects, .contact{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0px 20vw 0px 20vw;
+    background-color: #1f2026;
+}
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width:100%;
+}
+h1{
+    font-size: 3rem;
+    color: #4b63d8;
+}
+
+p{
+    font-size: 1rem;
+    color: #1a659e;
+}
+
+.contactButton{
+    margin-top: 20px;
+    background-color: #5773ff;
+    width:min-content;
+    padding:10px 20px 10px 20px;
+    border-radius: 10px;
+    transition-duration: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+.contactButton:hover{
+    background-color: #4b63d8;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .projects{
+        margin: 0px 15vw 0px 15vw;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .projects{
+        margin: 0px 10vw 0px 10vw;
+    }
 }
