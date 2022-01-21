@@ -88,7 +88,7 @@ a, a:visited, a:hover, a:active {
 .projectsContainer{
     display: flex;
     flex-direction: column;
-    gap:50px;
+    margin-top:-50px;
     width:100%;
 }
 h1{
