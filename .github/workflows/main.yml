@@ -34,7 +34,7 @@ jobs:
         
       - name: Deploy
         env: 
-          SRC_FOLDER_PATH: "Public"
+          SRC_FOLDER_PATH: "public"
           TARGET_BRANCH: "gh-pages"
         
         run: |
