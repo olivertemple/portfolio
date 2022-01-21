@@ -2,6 +2,8 @@ import React from "react"
 import "../styles/Project.scss";
 import {DiGithubAlt} from "react-icons/di";
 import { GrDeploy } from "react-icons/gr";
+
+
 export default function Project(props){
     let background = 'url(' + props.image + ')';
     return(
@@ -27,7 +29,8 @@ export default function Project(props){
                         ) : null}
                         {props.links.deployment ? (
                             <div className="deployment">
-                                <GrDeploy />
+                                <GrDeploy/>
+
                                 <a href={props.links.deployment} target="_blank" rel="noopener noreferrer">Deployment</a>
                             </div>
                         ) : null}

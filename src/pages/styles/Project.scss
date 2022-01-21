@@ -13,9 +13,13 @@ h2{
     flex: 1;
     border-radius: 10px;
 }
-
+.tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .tag{
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
     padding: 10px;
     border-radius: 10px;
     color: #4b63d8;
@@ -25,13 +29,17 @@ h2{
     background-size: cover;
     border-radius: 10px 0 0 10px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1050px) {
+    .row{
+        flex-direction: column;
+    }
     .image{
-        display: none;
+        height:400px;
+        border-radius: 10px 10px 0 0;
     }
 }
 .info{
-    margin-left: 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,11 +50,12 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap:20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 .source, .deployment{
-    margin-top: 20px;
     background-color: #5773ff;
     width:min-content;
     padding:10px 20px 10px 20px;
@@ -57,8 +66,13 @@ h2{
     align-items: center;
     gap:10px;
 }
+
 .source:hover, .deployment:hover{
-    background-color: #4b63d8;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    @media only screen and (min-width: 600px) {
+        background-color: #1F2026;
+        box-shadow: 0px 0px 1px 1px #5773ff;
+        margin-top: 15px;
+        margin-bottom: 5px;         
+        color:#ff6b35;
+    }
 }

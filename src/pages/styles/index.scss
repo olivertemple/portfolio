@@ -6,6 +6,7 @@
     align-items: center;
     display: flex;
     text-align: center;
+    margin: 0px 10px 0px 10px;
 }
 
 .hero{
@@ -13,6 +14,15 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    width:100%;
+    flex-direction: column;
+}
+.play_pause{
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin:25px;
+    cursor: pointer;
 }
 
 .title, .intro{
@@ -25,7 +35,9 @@ body{
     font-family: 'Roboto Mono', monospace;
 
 }
-
+#tsparticles{
+    z-index: -10;
+}
 .Typewriter{
     color:#4b63d8;
     font-size: 3rem;
@@ -41,12 +53,12 @@ body{
     align-items: center;
     justify-content: flex-end;
     padding-right: 20px;
-    background-color: #1f2026;
 }
 .menuItem{
     margin:20px;
     cursor: pointer;
     color: #4b63d8;
+    transition-duration: 0.1s;
 }
 
 .menuItem:hover{
@@ -57,17 +69,25 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
   }
 
-.about, .projects, .contact{
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about, .projects, .contact, .skills{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 0px 20vw 0px 20vw;
-    background-color: #1f2026;
+    align-content: center;
+    width:1000px;
+    z-index: 1;
 }
 .projectsContainer{
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:50px;
     width:100%;
 }
 h1{
@@ -80,8 +100,21 @@ p{
     color: #1a659e;
 }
 
+
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-evenly;
+    .skill{
+        color: #1a659e;
+        
+        
+    }
+}
+
 .contactButton{
-    margin-top: 20px;
     background-color: #5773ff;
     width:min-content;
     padding:10px 20px 10px 20px;
@@ -93,26 +126,31 @@ p{
     gap:10px;
 }
 .contactButton:hover{
-    background-color: #4b63d8;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    @media only screen and (min-width: 600px) {
+        background-color: #4b63d8;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 .contacts{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap:20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 1300px) {
-    .projects{
-        margin: 0px 15vw 0px 15vw;
+@media only screen and (max-width: 1050px) {
+    .about, .projects, .contact, .skills{
+        width:calc(100% - 100px);
+        margin: 50px;
+    }
+    .menuBar{            
+        justify-content: center;
+
     }
 }
 
-@media only screen and (max-width: 1100px) {
-    .projects{
-        margin: 0px 10vw 0px 10vw;
-    }
-}
