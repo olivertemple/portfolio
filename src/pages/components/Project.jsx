@@ -16,11 +16,12 @@ export default function Project(props){
                         <p>{props.description}</p>
                     </div>
                     <div className="tags">
-                        {props.tags.map((tag, index) => {
+                        {props.tags ? props.tags.map((tag, index) => {
                             return <span className="tag" key={index}>{tag}</span>
-                        })}
+                        }) : null}
                     </div>
-                    <div className="links">
+                    {props.links ? (
+                        <div className="links">
                         {props.links.source ? (
                             <div className="source">
                                 <DiGithubAlt />
@@ -34,8 +35,9 @@ export default function Project(props){
                                 <a href={props.links.deployment} target="_blank" rel="noopener noreferrer">Deployment</a>
                             </div>
                         ) : null}
-                        
                     </div>
+                    ) : null}
+                    
                 </div>
             </div>
             

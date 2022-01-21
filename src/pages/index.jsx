@@ -1,7 +1,7 @@
 import * as React from "react"
 import "./styles/index.scss";
 import Typewriter from 'typewriter-effect';
-import Project from "./components/Project";
+import Project from "./components/Project.jsx";
 import {DiGithubAlt} from "react-icons/di";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPlayFill, BsFillPauseFill } from "react-icons/bs";
