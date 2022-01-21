@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
           <div className="menuItem">
             <a href="#skills" onClick={() => {
               this.skillsRef.current.scrollIntoView({behavior: "smooth"});
-            }}>Test</a>
+            }}>Skills</a>
           </div>
           <div className="menuItem">
             <a href="#projects" onClick={() => {
