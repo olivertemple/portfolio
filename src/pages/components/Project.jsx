@@ -5,7 +5,7 @@ import { GrDeploy } from "react-icons/gr";
 
 
 export default function Project(props){
-    let background = 'url(' + props.image + ')';
+    let background = 'url(./' + props.image + ')';
     return(
         <div className="project">
             <div className="row">
