@@ -124,14 +124,17 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:10px;
     margin-left: 20px;
+
+    a{
+        margin-left: 10px;
+    }
 }
 .contactButton:hover{
     @media only screen and (min-width: 600px) {
         background-color: #4b63d8;
-        margin-top: 15px;
         margin-bottom: 5px;
+        margin-top:-5px;
     }
 }
 
@@ -156,3 +159,8 @@ p{
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .about, .projects, .contact, .skills{
+        width:calc(100% - 50px);
+    }
+}
