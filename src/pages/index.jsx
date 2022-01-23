@@ -6,6 +6,7 @@ import {DiGithubAlt} from "react-icons/di";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPlayFill, BsFillPauseFill } from "react-icons/bs";
 import Particles from "react-tsparticles";
+import {Helmet} from "react-helmet"
 
 const projects = require("../projects.json");
 // markup
@@ -52,7 +53,11 @@ class IndexPage extends React.Component {
   render(){
     return (
       <main>
-        <title>Oliver Temple | Portfolio</title>
+        <Helmet>
+          <link rel="icon" href="/static/images/icon.png" />
+          <meta name="description" content="A portfolio website for me, Oliver Temple" />
+          <title>Oliver Temple | Portfolio</title>
+        </Helmet>
         <nav className="menuBar">
           <div className="menuItem">
             <a href="#skills" onClick={() => {
