@@ -43,7 +43,7 @@
         "tags":["React", "JavaScript", "API", "AWS"],
         "links":{
             "source":"https://github.com/olivertemple/nea",
-            "deployment":"nea.olivertemple.dev"
+            "deployment":"https://nea.olivertemple.dev"
         }
     }
 ]
