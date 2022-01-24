@@ -24,7 +24,7 @@
         "tags":["React", "JavaScript", "Progressive Web App"],
         "links":{
             "source":"https://github.com/olivertemple/spotistats",
-            "deployment":"https://olivertemple.github.io/weather/"
+            "deployment":"https://weather.olivertemple.dev"
         }
     },
     {
@@ -43,7 +43,7 @@
         "tags":["React", "JavaScript", "API", "AWS"],
         "links":{
             "source":"https://github.com/olivertemple/nea",
-            "deployment":"https://olivertemple.github.io/nea/"
+            "deployment":"nea.olivertemple.dev"
         }
     }
 ]
