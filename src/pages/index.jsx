@@ -7,12 +7,17 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPlayFill, BsFillPauseFill } from "react-icons/bs";
 import Particles from "react-tsparticles";
 import {Helmet} from "react-helmet"
+import { Analytics } from "@oliver-temple/analytics";
 
 const projects = require("../projects.json");
 // markup
 class IndexPage extends React.Component {
   constructor(props){
     super(props);
+
+    let anal = new Analytics("-MuSNfQjN7E9adTA7l9Q");
+    anal.clicks();
+
     this.state = {
       showMenu: false,
       play:true,
