@@ -18,20 +18,19 @@
         }
     },
     {
-        "name":"Weather",
-        "description":"Weather is a progressive web app that uses the openweathermap api to fetch the weather at your location. It shows the weather for the next two days at 1 hour intervals, and also gives an overview of the weather for the coming week.",
-        "image":"/static/images/weather.png",
-        "tags":["React", "JavaScript", "Progressive Web App"],
+        "name":"CDD",
+        "description":"CDD is a command line utility designed to replace the cd command. It allows for directories to be saved under aliases for easy access.",
+        "tags":["batch","rust","cli"],
+        "image":"/static/images/cdd.png",
         "links":{
-            "source":"https://github.com/olivertemple/spotistats",
-            "deployment":"https://weather.olivertemple.dev"
+            "source":"https://github.com/olivertemple/cdd"
         }
     },
     {
         "name":"Init",
         "description":"Init is a simple command line utility that allows you to easily create a new git repository and link it to a new GitHub repository. It also allows you to create a repository from a predefined template, as well as create extra files.",
         "image":"/static/images/init.png",
-        "tags":["Python"],
+        "tags":["Python","cli"],
         "links":{
             "source":"https://github.com/olivertemple/init"
         }
