@@ -187,7 +187,7 @@ class IndexPage extends React.Component {
             <div className="container">
               <h1>About</h1>
               <div>
-                  <p>I am a software developer from the UK, with a love for coding. I enjoy coding all types of software, from mobile apps and websites to command line utilities.</p>
+                  <p>I am a second year undergraduate studying engineering at the Dyson Institue of Engineering and Technology, with a love for coding. I enjoy coding all types of software, from mobile apps and websites to command line utilities.</p>
               </div>
             </div>
           </section>
